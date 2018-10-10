@@ -1,20 +1,21 @@
 import React from 'react';
 
-const GameCard = () => (
+const GameCard = ({ game }) => (
   <div className="ui card">
     <div className="image">
-      <span className="ui green ribbon label">$32.99</span>
+      <span className="ui green ribbon label">${game.price}</span>
       <img src="https://picsum.photos/100/100" alt="game cover" />
     </div>
     <div className="content">
       <a href="#" className="header">
-        Quadropolis
+        {game.name}
       </a>
       <div className="meta">
         <i className="icon users" />
-        2-4&nbsp;
+        {game.players}
+        &nbsp;
         <i className="icon wait" />
-        60 min
+        {game.duration} min
       </div>
     </div>
   </div>
