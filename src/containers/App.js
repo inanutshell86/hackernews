@@ -6,30 +6,30 @@ const games = [
   {
     _id: 1,
     name: 'Quadropolis',
-    price: '32.99',
+    price: 3299,
     players: '2-4',
-    duration: '60'
+    duration: 60
   },
   {
     _id: 2,
     name: 'Five Tribes',
-    price: '29.99',
+    price: 2999,
     players: '2-5',
-    duration: '80'
+    duration: 80
   },
   {
     _id: 3,
     name: 'Terminator',
-    price: '66.44',
+    price: 6644,
     players: '1-2',
-    duration: '50'
+    duration: 50
   },
   {
     _id: 4,
     name: 'Potter',
-    price: '93.12',
+    price: 9312,
     players: '3-4',
-    duration: '120'
+    duration: 120
   }
 ];
 
