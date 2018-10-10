@@ -6,8 +6,11 @@ const Message = ({ header, content, type }) => {
     <div className={'ui icon message ' + type}>
       <i
         className={
-          'icon ' +
-          (type === 'negative' ? 'exclamation triangle' : 'thumbs up outline')
+          type === 'info'
+            ? 'icon info'
+            : type === 'negative'
+              ? 'icon exclamation triangle'
+              : 'icon thumbs up outline'
         }
       />
       <div className="content">

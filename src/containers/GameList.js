@@ -10,7 +10,7 @@ const GameList = ({ games }) => (
       <Message
         header="There are no game in your store"
         content="You should add some, don't you think?"
-        type="negative"
+        // type="negative"
       />
     ) : (
       games.map(game => <GameCard game={game} key={game._id} />)
