@@ -2,17 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import GameCard from 'GameCard';
+import Message from 'Message';
 
 const GameList = ({ games }) => (
   <div className="ui four cards">
     {games.length === 0 ? (
-      <div className="ui icon message">
-        <i className="icon info" />
-        <div className="content">
-          <div className="header">There are no game in your store</div>
-          <p>You should add some, don't you think?</p>
-        </div>
-      </div>
+      <Message
+        header="There are no game in your store"
+        content="You should add some, don't you think?"
+        type="negative"
+      />
     ) : (
       games.map(game => <GameCard game={game} key={game._id} />)
     )}
